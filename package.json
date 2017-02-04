@@ -1,6 +1,6 @@
 {
   "name": "webpack-demos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a collection of simple demos of Webpack",
   "main": "index.js",
   "scripts": {

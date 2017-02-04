@@ -1,6 +1,6 @@
 
 
-//get this method in http://stackoverflow.com/questions/9267899/arraybuffer-to-base64-encoded-string
+//get the method in http://stackoverflow.com/questions/9267899/arraybuffer-to-base64-encoded-string
 function _arrayBufferToBase64( buffer ) {
     var binary = '';
     var bytes = new Uint8Array( buffer );
@@ -14,6 +14,7 @@ function _arrayBufferToBase64( buffer ) {
 function getFile(){
     var fileInput = document.getElementById('fileInput');
     var file = fileInput.files[0];
+    console.log(file)
     var reader = new FileReader();
     reader.onload = function () {
         var result= document.getElementById("result");
