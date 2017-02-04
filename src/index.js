@@ -22,6 +22,10 @@ function getFile(){
         var v =new Int8Array(arrayBuffer)
         var base64 = _arrayBufferToBase64(arrayBuffer)
         document.getElementById("img").src= 'data:image/jpg;base64,'+base64
+        document.getElementById("text").innerHTML= base64
+
+
+
     };
     reader.readAsArrayBuffer(file);
 }
@@ -29,3 +33,4 @@ function getFile(){
 document.getElementById('fileInput').addEventListener("change", function () {
     getFile()
 })
+
